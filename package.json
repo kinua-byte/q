@@ -1,0 +1,22 @@
+{
+  "name": "lru_cache",
+  "version": "1.0.0",
+  "description": "一定の値に達したら使われていない順に要素を削除されていく入れ物を作る\r [ ]入れ物を作る\r [ ]値を入れていく\r   [ ]aを入れてみる\r   [ ]bを入れてみる\r [ ]最初の値を消去する\r [ ]使う\r   [ ]aを使う\r [ ]使った場合消去させない",
+  "main": "LRU_Cache_Test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinua-byte/javascript_study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinua-byte/javascript_study/issues"
+  },
+  "homepage": "https://github.com/kinua-byte/javascript_study#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
