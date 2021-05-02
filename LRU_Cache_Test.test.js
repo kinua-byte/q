@@ -1,6 +1,6 @@
 const { test, expect } = require("@jest/globals");
 // const { app } = require("./LRU_Cache_Test");
-var app = require('./LRU_Cache_Test.js');
+var box = require('./LRU_Cache_Test.js');
 
 test('boxにaを入れる ', () => {
 
@@ -8,9 +8,8 @@ test('boxにaを入れる ', () => {
 
   // box.push('a')  ;
   //検証(assert)
-  // expect(app.array.length).toEqual(0);
-  // expect(app.class).toEqual('Bar');
-  // //expect(app.class.array).toEqual('a');
-  // expect(app.class.array.length).toEqual(1);
-  expect(app.obj.name).toContain('a')
+  //aが入っているか確認
+  expect(box.obj.class.array).toContain('a');
+  //要素数確認
+  expect(box.obj.class.array).toHaveLength(1);
 } )

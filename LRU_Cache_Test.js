@@ -18,6 +18,12 @@
 //   },
 // };
 var obj ={
- name: 'a'
+ //name: 'a'
+   class: new class Bar {
+    constructor() {
+      this.array = ['a'];
+    }
+    foo() {}
+  },
 }
 exports.obj = obj
