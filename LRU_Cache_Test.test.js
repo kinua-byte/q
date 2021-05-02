@@ -1,6 +1,6 @@
 const { test, expect } = require("@jest/globals");
 // const { app } = require("./LRU_Cache_Test");
-const app = require('./LRU_Cache_Test');
+var app = require('./LRU_Cache_Test.js');
 
 test('boxにaを入れる ', () => {
 
@@ -12,5 +12,5 @@ test('boxにaを入れる ', () => {
   // expect(app.class).toEqual('Bar');
   // //expect(app.class.array).toEqual('a');
   // expect(app.class.array.length).toEqual(1);
-  expect(app.number).toEqual(12)
+  expect(app.obj.name).toContain('a')
 } )

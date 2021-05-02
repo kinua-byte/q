@@ -8,12 +8,16 @@
 //   box.push('a')  ;
 // return box;
 // }
-module.experts = {
-  number: 12,
-  class: new class Bar {
-    constructor() {
-      this.array = ['a'];
-    }
-    foo() {}
-  },
-};
+// module.experts = {
+//   number: 12,
+//   class: new class Bar {
+//     constructor() {
+//       this.array = ['a'];
+//     }
+//     foo() {}
+//   },
+// };
+var obj ={
+ name: 'a'
+}
+exports.obj = obj
