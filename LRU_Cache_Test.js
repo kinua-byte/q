@@ -1,29 +1,19 @@
-// class Box {
 
-// }
-//入れ物を作る
-//test
-// const app = () => {
-//   const box = [ ];
-//   box.push('a')  ;
-// return box;
-// }
-// module.experts = {
-//   number: 12,
-//   class: new class Bar {
-//     constructor() {
-//       this.array = ['a'];
-//     }
-//     foo() {}
-//   },
-// };
-var obj ={
+var obj={
  //name: 'a'
    class: new class Bar {
     constructor() {
-      this.array = ['a'];
+      this.array = [];
+
     }
     foo() {}
-  },
+  }
 }
+// function obj(mark) {
+//   class: class Bar {
+//     constructor() {
+//       this.array = this.array.put(mark)
+//     }
+//   }
+// }
 exports.obj = obj
