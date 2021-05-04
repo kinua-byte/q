@@ -16,4 +16,11 @@ var obj={
 //     }
 //   }
 // }
+
+function PUSH(a) {
+  this.array = obj.class.array.push(a)
+
+}
+
 exports.obj = obj
+exports.PUSH = PUSH

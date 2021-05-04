@@ -12,3 +12,6 @@ test('boxを作る ', () => {
   //要素数確認
   expect(box.obj.class.array).toHaveLength(0);
 } )
+test('aを追加する',() => {
+    expect(box.obj.class.array.push).toHaveLength(1);
+})
