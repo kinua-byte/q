@@ -28,20 +28,32 @@
 //new
 class LRU {
     constructor(size) {
-      // size はLRUキャッシュのサイズ
+      // size はLRUキャッシュ最大のサイズ
+      // countは現在のサイズ
       // コードを書く
-      this.size =size;
+      this.size = size;
+      this.count = 0;
     }
 
-    // 要素を追加する
+    // 要素を追加し、現在のサイズをカウントする
     put(key, data) {
       // コードを書く
       this[key] = data;
+      this.count++;
     }
 
-    // 要素を取得する
+    // 最大サイズ以上なら削除して、要素を取得する
     get(key) {
       // コードを書く
+      // this.count = this.length;
+      if(this.count > this.size){
+        for(key in this){
+          var j = key;
+        }
+        for(let i = 0;i < this.count - this.size;i++){
+          this[j] = undefined;
+        }
+      }
       return this[key];
     }
 }
