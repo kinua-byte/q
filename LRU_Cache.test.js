@@ -24,7 +24,7 @@ test("登録した要素を取得できる", () => {
     lru.put("a", "dataA");
     lru.put("b", "dataB");
     expect(lru.get("a")).toBe("dataA");
-    expect(lru.get("b")).toBe("dataC");
+    expect(lru.get("b")).toBe("dataB");
 });
 
 test("キャッシュサイズを超えた場合、古いものが削除される", () => {

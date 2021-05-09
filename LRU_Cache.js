@@ -30,17 +30,19 @@ class LRU {
     constructor(size) {
       // size はLRUキャッシュのサイズ
       // コードを書く
+      this.size =size;
     }
 
     // 要素を追加する
     put(key, data) {
       // コードを書く
+      this[key] = data;
     }
 
     // 要素を取得する
     get(key) {
       // コードを書く
-      return undefined;
+      return this[key];
     }
 }
 module.exports = LRU;
