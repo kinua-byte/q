@@ -47,4 +47,5 @@ test("キャッシュサイズを超えた場合、古いものが削除され�
 //     expect(lru.get("a")).toBe("dataA");
 //     expect(lru.get("b")).toBeUndefined();
 //     expect(lru.get("c")).toBe("dataC");
-})
+// }
+// )
