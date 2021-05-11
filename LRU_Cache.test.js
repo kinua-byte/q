@@ -33,6 +33,8 @@ test("キャッシュサイズを超えた場合、古いものが削除され�
     lru.put("b", "dataB");
     lru.put("c", "dataC");
     expect(lru.get("a")).toBeUndefined();
+    expect(lru.get("b")).toBe("dataB");
+    expect(lru.get("c")).toBe("dataC");
 });
 
 /// その他のテストを書く

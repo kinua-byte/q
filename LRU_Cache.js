@@ -47,12 +47,8 @@ class LRU {
       // コードを書く
       // this.count = this.length;
       if(this.count > this.size){
-        for(key in this){
-          var j = key;
-        }
-        for(let i = 0;i < this.count - this.size;i++){
-          this[j] = undefined;
-        }
+
+        this["a"] = undefined;
       }
       return this[key];
     }
