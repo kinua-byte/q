@@ -10,7 +10,7 @@ class LRU {
     // 要素を追加し、現在のサイズをカウントする
     put(key, data) {
       // コードを書く
-      this[key] = data;
+      this[key] = data ,(this.count);
       this.count++;
     }
 
@@ -20,7 +20,7 @@ class LRU {
       // this.count = this.length;
       if(this.count > this.size){
 
-        this["a"] = undefined;
+        this[this.count == 0] = undefined;
       }
       return this[key];
     }
